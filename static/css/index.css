@@ -1,0 +1,35 @@
+body{
+    background-image: url('/static/images/sqlalchemy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.title{
+    color: #00FF7F;
+    margin: 50px 40px;
+    font-size: 45pt;
+    text-shadow: 1px 0 5px #00BFFF;
+    line-height: 45px;
+    word-spacing: 12px;
+    }
+
+.text{
+    color: #FFD700;
+    font-size: 25pt;
+    text-shadow: 1px 0 5px #000080;
+    font-family: tahoma, "Times New Roman", serif;
+    }
+
+.btn{
+    display: inline-block;
+    width: 300px;
+    margin: 130px 20px;
+    background: #DC143C;
+    color: #00FF00;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 25pt;
+    border-radius: 15px;
+    border: 5px solid;
+    }

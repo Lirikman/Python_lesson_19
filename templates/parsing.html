@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск вакансий</title>
+    <link href="/static/css/parsing.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Поиск вакансий HH.RU</h1>
+<br><br>
+<form action = '/base.html' method="post">
+    <label class="rect">Выберите город</label>
+    <select class="sel" name = 'city'>
+        <option value="54">Красноярск</option>
+        <option value="4">Новосибирск</option>
+        <option value="90">Томск</option>
+        <option value="68">Омск</option>
+    </select>
+    <br><br><br>
+    <label class="rect">Выберите профессию</label>
+    <select class='sel' name = "vac">
+        <option value="Программист Python">Программист Python</option>
+        <option value="Программист 1С">Программист 1С</option>
+        <option value="Системный администратор">Системный администратор</option>
+        <option value="IT-специалист">IT-специалист</option>
+    </select>
+    <br><br><br>
+    <input class="search" type="submit" value="Поиск">
+</form>
+<a class="btn" align="center" href="index.html">Описание проекта</a>
+<a class="btn" align="center" href="base.html">База данных</a>
+</body>
+</html>

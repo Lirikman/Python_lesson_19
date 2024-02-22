@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>База данных</title>
+    <link href="/static/css/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1 class="title">База данных SQLite</h1>
+<table class="table" align="center" border="1">
+    <tr>
+        <th class="th">№</th>
+        <th class="th">Город</th>
+        <th class="th">Профессия</th>
+        <th class="th">Навыки</th>
+        <th class="th">Зарплата</th>
+    </tr>
+    {% for s in all_str%}
+    <tr>
+        <td class="td">{{s.id}}</td>
+        <td class="td">{{s.city}}</td>
+        <td class="td">{{s.vac}}</td>
+        <td class="td">{{s.text}}</td>
+        <td class="td">{{s.salary}} руб.</td>
+    </tr>
+    {% endfor %}
+</table>
+<br><br>
+<form action="/add.html" method="post">
+    <label class="title_add">Ручное добавление записи в базу данных</label>
+    <br><br>
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{msg}}</div>
+    {% endfor %}
+    <br>
+    <label class="label_m">Выберите город:</label>
+        <select class="label_t" name = 'city_m'>
+            <option value="Красноярск">Красноярск</option>
+            <option value="Новосибирск">Новосибирск</option>
+            <option value="Томск">Томск</option>
+            <option value="Омск">Омск</option>
+        </select>
+    <br>
+    <label class="label_m">Выберите профессию:</label>
+        <select class="label_t" name = 'vac_m'>
+            <option value="Программист Python">Программист Python</option>
+            <option value="Программист 1С">Программист 1С</option>
+            <option value="Системный администратор">Системный администратор</option>
+            <option value="IT-специалист">IT-специалист</option>
+        </select>
+    <br>
+    <label class="label_m"> Введите нужные навыки:</label>
+    <input class="label_t" type="text" name="skills_m">
+    <br>
+    <label class="label_m">Введите размер заработной платы:</label>
+    <input class="label_t" type="text" name="salary_m">
+    <br><br>
+    <input class="but_add" type="submit" value="Добавить в базу">
+</form>
+<br><br>
+<form action="/delete.html" method="post">
+    <label class="rect">Выберите номер для удаления записи:</label>
+    <select class="select" name="number">
+        {% for s in all_id%}
+        <option>{{s}}</option>
+        {% endfor %}
+    </select>
+    <input  class="delete" type="submit" value="Удалить">
+</form>
+<br><br>
+<a class="btn" align="center" href="index.html">Описание проекта</a>
+<a class="btn" align="center" href="parsing.html">Парсинг</a>
+</body>
+</html>

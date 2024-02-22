@@ -1,0 +1,62 @@
+body{
+    background-image: url('/static/images/parsing.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    }
+
+h1{
+    color:#FF6347;
+    margin: 50px 40px;
+    font-size: 45pt;
+    text-shadow: 1px 0 5px #0000FF;
+    line-height: 45px;
+    word-spacing: 12px;
+    text-align: center;
+    }
+
+.rect{
+    width: 40px;
+    height: 30px;
+    border: 2px solid;
+    margin:  5px 10px;
+    background: #7CFC00;
+    color: #00008B;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 25pt
+    }
+
+.sel{
+    width: 420px;
+    height: 45px;
+    background: #00FA9A;
+    color: #00008B;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 20pt;
+    text-align: center
+    }
+
+.search{
+    width: 280px;
+    height: 50px;
+    border: 2px solid;
+    margin:  5px auto;
+    background: #00FFFF;
+    color: #0000CD;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 22pt
+    }
+
+.btn{
+    display: inline-block;
+    width: 320px;
+    margin: 130px 30px;
+    background: #DC143C;
+    color: #00FF00;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 25pt;
+    border-radius: 15px;
+    border: 5px solid;
+    }
